@@ -1,0 +1,91 @@
+<html>
+<head>
+<script>
+function myFunction() {
+    $industry = (document.getElementById('industry').value);
+    $employees = (document.getElementById('employees').value);
+    $software = (document.getElementById('software').value);
+    
+    if($software == "ecommerce")
+    {
+        	alert("Our Reccomendation is : Buid and in-source")
+
+    }
+    
+    else
+    {
+    	if($software == "ecommerce")
+    		{
+    	 $alertText = "Our Reccomendation is : Buy SaaS"
+              }
+
+          else
+          {
+          	if ($employees == "medium" &&  $employees == "small" )
+    	     {
+
+			alert ("Our Reccomendation is : buy")    	     
+    	     }
+
+    	     else
+    	     {
+    	     	if($software == "erp")
+    		    {
+    		    	alert ("Our Reccomendation is : in-house")
+                }
+    	     }
+
+             
+          }
+
+
+
+    }	
+
+}
+
+</script>
+<h1>Software Planning tool</h1>
+
+</head>
+
+<body>
+
+
+<label>
+Industry
+<label>	
+<select id='industry'>
+  <option value="Retail">Retail</option>
+  <option value="Manufacturing">Manufacturing</option>
+  <option value="Services">Services</option>
+  <option value="Logistics">Logistics</option>
+</select>
+
+<br>
+	
+<label>
+Employees
+<label>	
+<select id='employees'>
+  <option value="small">less than 50</option>
+  <option value="medium">50-500</option>
+  <option value="large">500-1000</option>
+  <option value="vlarge">more than 10,0000</option>
+</select>
+
+<br>
+<label>
+Software Type
+<label>	
+<select id='software'>
+  <option value="ecommerce">ecommerce</option>
+  <option value="hr">hr</option>
+  <option value="erp">erp</option>
+</select>
+	
+<br>
+
+<button type="button" onclick="myFunction()">submit</button>
+</body>	
+</html>	
